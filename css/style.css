@@ -11,7 +11,7 @@
 * {
   box-sizing: border-box;
   transition: 0.15s ease-in-out, color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 .stars {
@@ -46,7 +46,7 @@
 }
 @media only screen and (max-width: 992px) {
   .underline {
-    border: 1px solid #d4d4d4;
+    border: 1px solid var(--secondarycolor);
     border-style: none none solid none;
   }
 }
@@ -62,7 +62,6 @@ button .navbar-toggler .collapsed {
 /* HEADER END */
 
 /* HOME START */
-
 #home {
   margin-top: 75px;
   background: var(--thirdcolor);
@@ -543,6 +542,9 @@ h3 {
   flex-flow: column;
   gap: 5px;
 }
+#footer .links .nav-links a:hover {
+  transform: translateY(-2px);
+}
 #footer .row .follow-us {
   margin-top: 10px;
 }
@@ -583,7 +585,7 @@ h3 {
 }
 @media only screen and (max-width: 992px) {
   #footer {
-    height: 620px;
+    height: 670px;
   }
   #footer .credit p {
     text-align: center;
@@ -599,5 +601,13 @@ h3 {
 }
 #footer .credit p {
   margin-bottom: 0;
+}
+#footer .follow-us-list a {
+  gap: 5px;
+  font-size: larger;
+}
+#footer .follow-us-list a:hover i {
+  transform: rotate(360deg);
+  transition: 0.5s ease-in-out;
 }
 /* FOOTER END */
