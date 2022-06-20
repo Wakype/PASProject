@@ -66,6 +66,9 @@ button .navbar-toggler .collapsed {
   margin-top: 75px;
   background: var(--thirdcolor);
 }
+#home .detail-produk p {
+  text-align: center;
+}
 #home .produk-populer .swiper-button i {
   color: var(--secondarycolor);
   padding: 7px;
